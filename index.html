@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Nguyen Tien Dat</title>
+  <meta name="description" content="Dr. Nguyen Tien Dat brand landing page" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=loaderfix2" />
+  <link rel="preload" as="image" href="assets/brand/logo-bs-dat.webp" type="image/webp">
+  <link rel="preload" as="image" href="assets/doctor/AVT-poster.webp" type="image/webp">
+  <link rel="preload" as="video" href="assets/doctor/AVT.mp4" type="video/mp4">
+  <style>
+    /* Critical first fold + single scrollbar */
+    html{margin:0!important;padding:0!important;width:100%!important;height:100%!important;overflow:hidden!important;}
+    body{margin:0!important;padding:0!important;width:100%!important;height:100vh!important;min-height:100vh!important;overflow-y:auto!important;overflow-x:hidden!important;display:block!important;}
+    .site-header{position:relative!important;top:auto!important;bottom:auto!important;left:auto!important;right:auto!important;transform:none!important;margin:14px auto 0!important;opacity:1!important;visibility:visible!important;}
+    #home.hero{display:block!important;position:relative!important;margin:0 auto!important;min-height:auto!important;opacity:1!important;visibility:visible!important;transform:none!important;}
+    #home .hero-grid,#home .hero-media,#home .hero-copy,#home .hero-card,#home .ticker-shell{opacity:1!important;visibility:visible!important;transform:none!important;filter:none!important;}
+  </style>
+</head>
+<body class="preloading">
+
+  <div id="assetLoader" class="asset-loader" role="status" aria-live="polite" aria-label="Loading landing page assets">
+    <div class="asset-loader-card">
+      <img class="asset-loader-logo" src="assets/brand/logo-bs-dat.webp" alt="Dr. Dat Nguyen logo">
+      <div class="asset-loader-text">Loading</div>
+      <div class="asset-loader-bar" aria-hidden="true"><span id="assetLoaderProgress"></span></div>
+    </div>
+  </div>
+  <canvas id="motionCanvas" aria-hidden="true"></canvas>
+  <div class="noise-glow glow-one"></div>
+  <div class="noise-glow glow-two"></div>
+  <div class="noise-glow glow-three"></div>
+  <div class="lux-curve curve-a"></div>
+  <div class="lux-curve curve-b"></div>
+  <div class="lux-curve curve-c"></div>
+  <div class="lux-grid"></div>
+  <div class="brush-motion brush-a"></div>
+  <div class="brush-motion brush-b"></div>
+  <div class="brush-motion brush-c"></div>
+  <div class="brush-motion brush-d"></div>
+  <div class="scroll-progress"></div>
+
+  <header class="site-header glass">
+    <a href="#home" class="brand" aria-label="Dr. Nguyen Tien Dat - back to top">
+      <span class="brand-logo-wrap"><img class="brand-logo" src="assets/brand/logo-bs-dat.webp" alt="Dr. Nguyen Tien Dat logo"></span>
+      <strong>Dr. Dat Nguyen</strong>
+    </a>
+    <nav class="nav" aria-label="Navigation">
+      <a href="#intro">About</a>
+      <a href="#services">Services</a>
+      <a href="#technology">Technology</a>
+      <a href="#facility">Facility</a>
+      <a href="#customers">Clients</a>
+      <a href="#media">Press</a>
+      <a href="#consult">Consultation</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid" id="intro">
+        <div class="hero-media">
+          <div class="hero-card glass">
+            <div class="hero-aura"></div>
+            <video id="heroVideo" src="assets/doctor/AVT.mp4" poster="assets/doctor/AVT-poster.webp" autoplay muted loop playsinline preload="metadata" aria-label="Dr. Nguyen Tien Dat"></video>
+          </div>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Aesthetic Surgeon</p>
+          <h1 id="doctorName" class="title-glow doctor-name-split"><span class="name-line">DR Nguyen</span><span class="name-line">Tien Dat</span></h1>
+          <p id="doctorSummary" class="lead">A plastic and aesthetic surgeon specializing in body-contouring procedures, with key service groups including breast augmentation, liposuction contouring, abdominoplasty, and personalized body-shape planning.</p>
+          <div class="social-cta" id="socialCtas">
+            <a class="social-pill primary" href="https://www.facebook.com/bacsidatnguyen.thammy" target="_blank" rel="noopener"><img src="assets/icons/facebook.svg" alt="Facebook"><span>Facebook</span></a>
+            <a class="social-pill" href="https://www.tiktok.com/@bacsidatnguyen89" target="_blank" rel="noopener"><img src="assets/icons/tiktok.svg" alt="TikTok"><span>TikTok</span></a>
+          </div>
+          <div class="credential-grid" id="credentialGrid">
+            <div class="credential-item">5 years serving as Deputy Head of Aesthetic Surgery at Thu Cuc Aesthetic Hospital</div>
+            <div class="credential-item">Lecturer in Plastic Surgery at Hanoi Medical Institute</div>
+            <div class="credential-item">In-house doctor at Ha Thanh General Hospital</div>
+            <div class="credential-item">Television guest speaker</div>
+          </div>
+        </div>
+      </div>
+      <div class="ticker-shell glass"><div class="ticker-track" id="tickerTrack"></div></div>
+    </section>
+
+    <section class="services section reveal-section" id="services">
+      <div class="section-top"><p class="eyebrow">Services</p><h2>Main Service Groups</h2></div>
+      <div class="service-grid parallax-item" data-parallax="0.08" id="serviceGrid"></div>
+    </section>
+
+    <section class="technology section reveal-section" id="technology">
+      <div class="section-top"><p class="eyebrow">Technology</p><h2>Supporting Technologies</h2></div>
+      <div class="tech-grid parallax-item" data-parallax="0.08" id="techGrid"></div>
+    </section>
+
+    <section class="facility section reveal-section" id="facility">
+      <div class="section-top"><p class="eyebrow">Facility</p><h2 id="facilityTitle"></h2></div>
+      <div class="facility-layout parallax-item" data-parallax="0.06">
+        <div class="facility-copy glass">
+          <span class="address-chip" id="facilityAddress"></span>
+          <p id="facilityDescription"></p>
+          <ul class="bullet-list" id="facilityList"></ul>
+        </div>
+        <div class="facility-slider glass">
+          <button class="slider-btn prev" id="facilityPrev" type="button" aria-label="Previous image">‹</button>
+          <div class="facility-stage"><img id="facilityStage" alt="Ha Thanh General Hospital facility" /></div>
+          <button class="slider-btn next" id="facilityNext" type="button" aria-label="Next image">›</button>
+          <div class="slider-dots" id="facilityDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customers section reveal-section" id="customers">
+      <div class="section-top split-section-head"><p class="eyebrow">Client Gallery</p><h2 class="split-heading client-gallery-heading"><span>Follow-up · Postoperative Care</span><span>Results · Before - After</span></h2></div>
+      <div class="category-grid parallax-item" data-parallax="0.09" id="categoryGrid"></div>
+    </section>
+
+    <section class="media section reveal-section" id="media">
+      <div class="section-top split-section-head media-section-head"><p class="eyebrow">Press · Television</p><h2 class="split-heading media-heading">Television Guest Speaker</h2></div>
+      <div class="media-grid parallax-item" data-parallax="0.05">
+        <div class="video-frame glass"><div class="ratio-box"><iframe id="vimeoFrame" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="VTV Dr. Nguyen Tien Dat."></iframe></div></div>
+        <div class="press-panel glass"><div class="press-list" id="pressList"></div></div>
+      </div>
+    </section>
+
+    <section class="consult section reveal-section" id="consult">
+      <div class="consult-card glass parallax-item" data-parallax="0.04">
+        <div class="section-top compact"><p class="eyebrow">Contact</p><h2>Register for Consultation</h2></div>
+        <form id="consultForm" class="consult-form">
+          <label><span>Full Name</span><input name="name" placeholder="Enter your full name" required></label>
+          <label><span>Phone Number</span><input name="phone" placeholder="Enter your phone number" required></label>
+          <label><span>Service of Interest</span><select id="serviceSelect" name="service" required><option value="">Select a service</option></select></label>
+          <label><span>Consultation Notes</span><textarea name="message" rows="4" placeholder="Briefly describe your needs"></textarea></label>
+          <button class="btn primary" type="submit">Submit Information</button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="serviceModal" aria-hidden="true">
+    <div class="modal-bg" data-close="serviceModal"></div>
+    <div class="modal-card wide glass"><button class="modal-close" data-close="serviceModal" type="button">×</button><div class="modal-head"><p class="eyebrow" id="serviceEyebrow"></p><h3 id="serviceTitle"></h3><p id="serviceDescription"></p></div><div class="modal-service-layout"><div class="modal-visual"><img id="serviceImage" alt="Service illustration"></div><div class="modal-steps" id="serviceSteps"></div></div></div>
+  </div>
+  <div class="modal" id="techModal" aria-hidden="true">
+    <div class="modal-bg" data-close="techModal"></div>
+    <div class="modal-card glass"><button class="modal-close" data-close="techModal" type="button">×</button><div class="modal-head"><p class="eyebrow" id="techEyebrow"></p><h3 id="techTitle"></h3><p id="techDescription"></p></div><div class="tech-viewer"><div class="modal-visual tech-modal-image"><img id="techImage" alt="Broll cận cảnh thiết bị"></div><div><ul class="detail-list" id="techDetails"></ul></div></div></div>
+  </div>
+  <div class="modal" id="galleryModal" aria-hidden="true">
+    <div class="modal-bg" data-close="galleryModal"></div>
+    <div class="modal-card wide glass"><button class="modal-close" data-close="galleryModal" type="button">×</button><div class="modal-head compact-gallery-head"><p class="eyebrow">Client Gallery</p><h3 id="galleryTitle"></h3></div><div id="galleryBody"></div></div>
+  </div>
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top">↑</button>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="app.js?v=enfixed2"></script>
+</body>
+</html>
