@@ -132,14 +132,58 @@
     <section class="consult section reveal-section" id="consult">
       <div class="consult-card glass parallax-item" data-parallax="0.04">
         <div class="section-top compact"><p class="eyebrow">Contact</p><h2>Register for Consultation</h2></div>
-        <form id="consultForm" class="consult-form">
-          <label><span>Full Name</span><input name="name" placeholder="Enter your full name" required></label>
-          <label><span>Phone Number</span><input name="phone" placeholder="Enter your phone number" required></label>
-          <label><span>Service of Interest</span><select id="serviceSelect" name="service" required><option value="">Select a service</option></select></label>
-          <label><span>Consultation Notes</span><textarea name="message" rows="4" placeholder="Briefly describe your needs"></textarea></label>
-          <button class="btn primary" type="submit">Submit Information</button>
-          <p id="formStatus" class="form-status"></p>
-        </form>
+        <form
+  id="consultForm"
+  class="consult-form"
+  method="POST"
+  action="https://script.google.com/macros/s/AKfycbwjxHVxOCJv4Z-ZNkLXEoqYtkoYN7NIKS28Zbom4T6RPSMuLdh66b5AWVojVEQCgdPl/exec"
+  target="hidden_iframe"
+>
+  <label>
+    <span>Full Name</span>
+    <input name="name" placeholder="Enter your full name" required>
+  </label>
+
+  <label>
+    <span>Phone Number</span>
+    <input name="phone" placeholder="Enter your phone number" required>
+  </label>
+
+  <label>
+    <span>Service of Interest</span>
+    <select id="serviceSelect" name="service" required>
+      <option value="">Select a service</option>
+    </select>
+  </label>
+
+  <label>
+    <span>Consultation Notes</span>
+    <textarea name="message" rows="4" placeholder="Briefly describe your needs"></textarea>
+  </label>
+
+  <input type="hidden" name="source" value="github-landing-page">
+  <input type="hidden" name="page" id="pageUrl">
+  <input type="hidden" name="userAgent" id="userAgent">
+
+  <input type="hidden" name="utm_source" id="utm_source">
+  <input type="hidden" name="utm_medium" id="utm_medium">
+  <input type="hidden" name="utm_campaign" id="utm_campaign">
+  <input type="hidden" name="utm_content" id="utm_content">
+  <input type="hidden" name="utm_term" id="utm_term">
+
+  <input
+    type="text"
+    name="website"
+    style="display:none"
+    tabindex="-1"
+    autocomplete="off"
+  >
+
+  <button class="btn primary" type="submit">Submit Information</button>
+  <p id="formStatus" class="form-status"></p>
+</form>
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
       </div>
     </section>
   </main>
@@ -157,7 +201,62 @@
     <div class="modal-card wide glass"><button class="modal-close" data-close="galleryModal" type="button">×</button><div class="modal-head compact-gallery-head"><p class="eyebrow">Client Gallery</p><h3 id="galleryTitle"></h3></div><div id="galleryBody"></div></div>
   </div>
   <button class="back-top" id="backTop" type="button" aria-label="Back to top">↑</button>
-  <script src="https://player.vimeo.com/api/player.js"></script>
-  <script src="app.js?v=enfixed2"></script>
+ <script src="https://player.vimeo.com/api/player.js"></script>
+<script src="app.js?v=enfixed2"></script>
+
+<script>
+  const leadForm = document.getElementById('consultForm');
+  const formStatus = document.getElementById('formStatus');
+
+  function fillTrackingFields() {
+    const pageUrl = document.getElementById('pageUrl');
+    const userAgent = document.getElementById('userAgent');
+
+    if (pageUrl) pageUrl.value = window.location.href;
+    if (userAgent) userAgent.value = navigator.userAgent;
+
+    const params = new URLSearchParams(window.location.search);
+
+    [
+      'utm_source',
+      'utm_medium',
+      'utm_campaign',
+      'utm_content',
+      'utm_term'
+    ].forEach(function (key) {
+      const input = document.getElementById(key);
+      if (input) {
+        input.value = params.get(key) || '';
+      }
+    });
+  }
+
+  fillTrackingFields();
+
+  if (leadForm) {
+    leadForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      fillTrackingFields();
+
+      if (formStatus) {
+        formStatus.textContent = 'Sending information...';
+      }
+
+      HTMLFormElement.prototype.submit.call(leadForm);
+
+      setTimeout(function () {
+        if (formStatus) {
+          formStatus.textContent = 'Information submitted successfully. We will contact you soon.';
+        }
+
+        leadForm.reset();
+        fillTrackingFields();
+      }, 1200);
+    }, true);
+  }
+</script>
+
 </body>
 </html>
