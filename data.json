@@ -1,0 +1,315 @@
+{
+  "doctor": {
+    "name": "DR Nguyen Tien Dat",
+    "role": "Aesthetic Surgeon",
+    "heroImage": "assets/doctor/AVT-poster.webp",
+    "summary": "A plastic and aesthetic surgeon specializing in body-contouring procedures, with key service groups including breast augmentation, body-contouring liposuction, abdominoplasty, and personalized body-proportion design for each client.",
+    "credentials": [
+      "5 years serving as Deputy Head of Aesthetic Surgery at Thu Cuc Aesthetic Hospital",
+      "Completed the French–Vietnamese aesthetic surgery training program",
+      "Lecturer in Plastic Surgery at Hanoi Medical Institute",
+      "Former professional instructor for medical-university training programs",
+      "In-house doctor at Ha Thanh General Hospital",
+      "Guest speaker on Vietnam national television programs"
+    ],
+    "socials": [
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/bacsidatnguyen.thammy",
+        "icon": "assets/icons/facebook.svg"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@bacsidatnguyen89",
+        "icon": "assets/icons/tiktok.svg"
+      }
+    ],
+    "heroVideo": "assets/doctor/AVT.mp4"
+  },
+  "ticker": [
+    "Breast Augmentation",
+    "Liposuction",
+    "Abdominoplasty",
+    "Vectra XT",
+    "Q-Lean Lipo"
+  ],
+  "services": [
+    {
+      "id": "breast",
+      "title": "Breast Augmentation",
+      "subtitle": "Standard breast augmentation, breast lift, and personalized breast-shape planning",
+      "image": "assets/services/nang-nguc.webp",
+      "description": "Focused on body proportions, breast harmony, and shape planning tailored to each client’s height, shoulders, waist, and skeletal frame.",
+      "steps": [
+        "Breast-base and glandular tissue examination",
+        "Shape, size, and personalized direction consultation",
+        "Surgical plan selection based on individual anatomy",
+        "Postoperative monitoring and follow-up visits"
+      ]
+    },
+    {
+      "id": "lipo",
+      "title": "Body-Contouring Liposuction",
+      "subtitle": "Applied to the abdomen, back, arms, legs, and areas that need refinement",
+      "image": "assets/services/hut-mo-tao-hinh.webp",
+      "description": "Designed to create balanced body contours, reduce measurements, and improve the overall silhouette harmoniously.",
+      "steps": [
+        "Assess fat distribution and skin quality",
+        "Map body contours according to individual proportions",
+        "Perform the procedure according to professional indications",
+        "Monitor surface smoothness and shaping after intervention"
+      ]
+    },
+    {
+      "id": "abdomen",
+      "title": "Abdominoplasty",
+      "subtitle": "Liposuction, mini skin removal, tummy tuck, and navel repositioning",
+      "image": "assets/services/tao-hinh-bung.webp",
+      "description": "Suitable for clients with excess skin, abdominal-wall laxity, or a desire to reshape the abdomen after childbirth or weight loss.",
+      "steps": [
+        "Assess excess skin, fat tissue, and abdominal-wall condition",
+        "Select the appropriate technique based on the actual condition",
+        "Perform the body-shaping plan discussed during consultation",
+        "Postoperative care and follow-up visits"
+      ]
+    },
+    {
+      "id": "combo",
+      "title": "Body-Sculpting Combo",
+      "subtitle": "Breast–abdomen, abdomen–back, and full-body form refinement combinations",
+      "image": "assets/services/combo-voc-dang.webp",
+      "description": "Combines multiple areas within one aesthetic direction to optimize continuity and body balance.",
+      "steps": [
+        "Analyze the overall body shape",
+        "Design a synchronized treatment roadmap",
+        "Prioritize safety and effectiveness during execution",
+        "Monitor recovery through each milestone"
+      ]
+    },
+    {
+      "id": "face",
+      "title": "Facial Services",
+      "subtitle": "Nose, eyelids, and refined facial-line adjustments",
+      "image": "assets/services/dich-vu-mat.webp",
+      "description": "Prioritizes harmonious proportions, natural expression, and enhancement of each client’s unique features.",
+      "steps": [
+        "Analyze facial structure",
+        "Consult on the most suitable approach",
+        "Perform the procedure according to professional indications",
+        "Monitor stability and final result refinement"
+      ]
+    }
+  ],
+  "technology": [
+    {
+      "id": "vectra",
+      "name": "Vectra XT",
+      "category": "3D Simulation",
+      "title": "Vectra XT",
+      "main": "assets/technology/vectra-xt-main.webp",
+      "broll": "assets/technology/vectra-xt-broll.webp",
+      "description": "A 3D simulation system that helps the doctor and client visualize post-procedure shape more clearly before treatment.",
+      "details": [
+        "Supports visual consultation with 3D imagery",
+        "Improves communication around aesthetic expectations",
+        "Suitable for cases that require clear shape planning"
+      ]
+    },
+    {
+      "id": "qlean",
+      "name": "Q-Lean Lipo",
+      "category": "Next-Generation Liposuction",
+      "title": "Q-Lean Lipo",
+      "main": "assets/technology/q-lean-lipo-main.webp",
+      "broll": "assets/technology/q-lean-lipo-broll.webp",
+      "description": "A device supporting body-contouring liposuction, optimizing handling experience and the postoperative surface.",
+      "details": [
+        "Supports contouring of fat areas",
+        "Suitable for body-refinement roadmaps",
+        "Can be combined in liposuction and body-contouring cases"
+      ]
+    },
+    {
+      "id": "plasma",
+      "name": "Cold Plasma",
+      "category": "Postoperative Care",
+      "title": "Cold Plasma",
+      "main": "assets/technology/plasma-lanh-main.webp",
+      "broll": "assets/technology/plasma-lanh-broll.webp",
+      "description": "A device applied after surgery when indicated, supporting care of the treated area during the early recovery phase.",
+      "details": [
+        "Applied in postoperative care",
+        "Supports monitoring of treated areas during the early phase",
+        "Used according to professional indications"
+      ]
+    },
+    {
+      "id": "longest",
+      "name": "Longest",
+      "category": "Blood-Flow Support",
+      "title": "Longest",
+      "main": "assets/technology/longest-main.webp",
+      "broll": "assets/technology/longest-broll.webp",
+      "description": "A device supporting postoperative care and recovery according to the post-intervention care pathway.",
+      "details": [
+        "Supports postoperative recovery monitoring",
+        "Enhances the post-service care experience",
+        "Supports a professional postoperative process"
+      ]
+    }
+  ],
+  "facility": {
+    "title": "Ha Thanh General Hospital",
+    "address": "61 Vu Thanh, O Cho Dua, Dong Da, Hanoi",
+    "description": "A modern medical facility space supporting consultation, procedure delivery, and postoperative care with an experience-first approach for clients.",
+    "images": [
+      "assets/facility/facility-1.webp",
+      "assets/facility/facility-2.webp",
+      "assets/facility/facility-3.webp",
+      "assets/facility/facility-4.webp",
+      "assets/facility/facility-5.webp",
+      "assets/facility/facility-6.webp"
+    ],
+    "items": [
+      "Modern reception and consultation space",
+      "Functional areas supporting service procedures",
+      "Convenient for postoperative monitoring and follow-up visits"
+    ]
+  },
+  "customers": {
+    "categories": [
+      {
+        "id": "tk",
+        "label": "Follow-up Visits",
+        "cover": "assets/customers/tk/tk-1.webp",
+        "count": 4
+      },
+      {
+        "id": "recovery",
+        "label": "Postoperative Care",
+        "cover": "assets/customers/recovery/recovery-1.webp",
+        "count": 9
+      },
+      {
+        "id": "results",
+        "label": "Results",
+        "cover": "assets/customers/results/result-1.webp",
+        "count": 11
+      },
+      {
+        "id": "ba",
+        "label": "Before - After",
+        "cover": "assets/customers/ba/case-1-2.webp",
+        "count": 6
+      }
+    ],
+    "tk": [
+      "assets/customers/tk/tk-1.webp",
+      "assets/customers/tk/tk-2.webp",
+      "assets/customers/tk/tk-3.webp",
+      "assets/customers/tk/tk-4.webp"
+    ],
+    "recovery": [
+      "assets/customers/recovery/recovery-1.webp",
+      "assets/customers/recovery/recovery-2.webp",
+      "assets/customers/recovery/recovery-3.webp",
+      "assets/customers/recovery/recovery-4.webp",
+      "assets/customers/recovery/recovery-5.webp",
+      "assets/customers/recovery/recovery-6.webp",
+      "assets/customers/recovery/recovery-7.webp",
+      "assets/customers/recovery/recovery-8.webp",
+      "assets/customers/recovery/recovery-9.webp"
+    ],
+    "results": [
+      "assets/customers/results/result-1.webp",
+      "assets/customers/results/result-10.webp",
+      "assets/customers/results/result-11.webp",
+      "assets/customers/results/result-2.webp",
+      "assets/customers/results/result-3.webp",
+      "assets/customers/results/result-4.webp",
+      "assets/customers/results/result-5.webp",
+      "assets/customers/results/result-6.webp",
+      "assets/customers/results/result-7.webp",
+      "assets/customers/results/result-8.webp",
+      "assets/customers/results/result-9.webp"
+    ],
+    "ba": [
+      {
+        "label": "Case 1",
+        "before": "assets/customers/ba/case-1-1.webp",
+        "after": "assets/customers/ba/case-1-2.webp"
+      },
+      {
+        "label": "Case 2",
+        "before": "assets/customers/ba/case-2-1.webp",
+        "after": "assets/customers/ba/case-2-2.webp"
+      },
+      {
+        "label": "Case 3",
+        "before": "assets/customers/ba/case-3-1.webp",
+        "after": "assets/customers/ba/case-3-2.webp"
+      },
+      {
+        "label": "Case 4",
+        "before": "assets/customers/ba/case-4-1.webp",
+        "after": "assets/customers/ba/case-4-2.webp"
+      },
+      {
+        "label": "Case 5",
+        "before": "assets/customers/ba/case-5-1.webp",
+        "after": "assets/customers/ba/case-5-2.webp"
+      },
+      {
+        "label": "Case 6",
+        "before": "assets/customers/ba/case-6-1.webp",
+        "after": "assets/customers/ba/case-6-2.webp"
+      }
+    ]
+  },
+  "media": {
+    "title": "Television Guest Features & Press",
+    "articles": [
+      {
+        "title": "Dr. Tien Dat’s 15-Year Journey in Building an Aesthetic Brand",
+        "source": "AloBacsi",
+        "url": "https://alobacsi.com/hanh-trinh-15-nam-xay-dung-thuong-hieu-tham-my-cua-dr-tien-dat.html"
+      },
+      {
+        "title": "The Trend of Applying 4.0 Technology in Aesthetic Surgery",
+        "source": "Eva.vn",
+        "url": "https://eva.vn/phau-thuat-tham-my/xu-the-ung-dung-cong-nghe-40-trong-phau-thuat-tham-my-c271a504375.html"
+      },
+      {
+        "title": "Aesthetic Surgery 'Booming' Despite COVID-19?",
+        "source": "Family & Society",
+        "url": "https://giadinh.suckhoedoisong.vn/phau-thuat-tham-my-boi-thu-bat-chap-covid-19-172220118144556278.htm"
+      },
+      {
+        "title": "Untold Stories Shared by an Aesthetic Surgeon",
+        "source": "Afamily",
+        "url": "https://afamily.vn/nhung-dieu-chua-ke-qua-chia-se-cua-bac-si-phau-thuat-tham-my-2022011816315696.chn"
+      },
+      {
+        "title": "Perfect Beauty with a Specialist with Over 15 Years of Experience",
+        "source": "Health & Life",
+        "url": "https://suckhoedoisong.vn/ve-dep-hoan-my-cung-chuyen-gia-hon-15-nam-kinh-nghiem-tai-benh-vien-chan-thuong-chinh-hinh-nghe-an-169220628114421532.htm"
+      },
+      {
+        "title": "Dr. Nguyen Tien Dat – The Golden Hands Preserving Youth",
+        "source": "Van Hien Plus",
+        "url": "https://vanhienplus.vn/bac-si-nguyen-tien-dat-doi-ban-tay-vang-niu-giu-thanh-xuan/67302/"
+      },
+      {
+        "title": "Golden Day for Rhinoplasty with a Specialist with Over 15 Years of Experience",
+        "source": "Nghe An 24h",
+        "url": "https://nghean24h.vn/ngay-vang-nang-mui-cung-chuyen-gia-tham-my-tren-15-nam-kinh-nghiem-a668197.html"
+      },
+      {
+        "title": "The Fear Called 'Capsular Contracture' After Breast Augmentation",
+        "source": "Vietnamese Women",
+        "url": "https://phunuvietnam.vn/noi-am-anh-mang-ten-co-that-bao-xo-sau-nang-cap-vong-1-20220118145014725.htm"
+      }
+    ],
+    "vimeoEmbed": "https://player.vimeo.com/video/1196599466?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&title=0&byline=0&portrait=0&dnt=1&transparent=0"
+  }
+}
